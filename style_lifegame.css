@@ -1,0 +1,72 @@
+.container{
+	position: absolute;
+	left:20px;
+	top:120px;
+}
+
+.cells{
+	margin: 0px auto;
+	padding: 0px;
+	list-style: none;
+}
+
+.cell{
+	margin: 0px auto;
+	padding: 0px;
+	width:6px;
+	height:6px;
+	border:1px solid #999;
+	background: white;
+}
+
+.menu{
+	position:absolute;
+	left: 40px;
+	top:20px;
+}
+
+.menu button{
+	width:100px;
+	height:30px;
+}
+
+.menu input{
+	width:70px;
+	height:20px;
+}
+
+.start{
+	position: absolute;
+	left:0px;
+	top:60px;
+}
+
+.pause{
+	position: absolute;
+	left:160px;
+	top:60px;
+}
+
+.end{
+	position: absolute;
+	left:320px;
+	top:60px;
+}
+
+.buildwall{
+	position: absolute;
+	left:480px;
+	top:60px;
+}
+
+.clearwall{
+	position: absolute;
+	left:640px;
+	top:60px;
+}
+
+.setting{
+	position: absolute;
+	left: 640px;
+	top:0px;
+}

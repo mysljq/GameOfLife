@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = 'utf-8'>
+	<title>Game of Life</title>
+	<link rel="stylesheet" type="text/css" href="style_lifegame.css">
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src = "logic.js"></script>
+	<script type="text/javascript" src = "draw.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul class="cells">	
+		</ul>		
+	</div>
+	<div class="menu">
+		<span class="size" style="height:30px">
+			大小:<input class="row" type="number" placeholder="1~100"/>
+			*
+			<input class="column" type="number" placeholder="1~100"/>
+		</span>
+		<span class="change_interval">
+			变化时间间隔:<input class="interval" type="number" placeholder="100~1000">
+			ms
+		</span>
+		<span class="living_cell_probability">
+			活细胞概率:<input class="probability" type="number" placeholder="0~100">
+			%
+		</span>
+		<button class="start" onclick="game_start();">开始</button>
+		<button class="pause" onclick="game_pause();">暂停</button>
+		<button class="end" onclick="game_end();">结束</button>
+		<button class="buildwall" onclick="game_buildwall();">切换建墙模式</button>
+		<button class="clearwall" onclick="game_clearwall();">清除所有墙壁</button>
+		<button class="setting" onclick="game_setting();">设置</button>
+	</div>
+	
+	<script type="text/javascript">
+	add_cell();
+	init_wall();
+	</script>
+</body>
+</html>
